@@ -1,0 +1,152 @@
+/* Contenedor principal */
+.app-container {
+  font-family: Arial, sans-serif;
+  margin: 30px auto;
+  padding: 25px;
+  max-width: 1000px;
+  background-color: #3c3434;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  color: #a3c78d;
+}
+
+/* Botones */
+button {
+  display: block;
+  margin: 15px auto;
+  padding: 12px 25px;
+  background-color: #78ab2e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #19532e;
+}
+
+/* Entradas */
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 12px;
+  width: 250px;
+  border: 1px solid #a3c78d;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Estilos del cuerpo */
+body {
+  background-color: #1a1a1a;
+  color: #a3c78d;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Tabla */
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #262626;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 12px;
+  text-align: center;
+  font-size: 1rem;
+  word-wrap: break-word;
+}
+
+th {
+  background-color: #78ab2e;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  background-color: #8B5E3C;
+}
+
+/* Estilos adicionales para la tabla */
+table thead tr {
+  background-color: #f2f2f2;
+  color:#8B5E3C;
+  text-align: center;
+  font-weight: bold;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Estilos del modal */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(111, 79, 40, 0.5);
+  padding: 10px;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%; /* Ancho del modal ajustado */
+  max-width: 1200px; /* Limita el tamaño máximo del modal */
+  max-height: 80%; /* Establece una altura máxima para el modal */
+  overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es grande */
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
